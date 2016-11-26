@@ -1,4 +1,4 @@
-# react-redux-typescript-webpack
-Fastest Webpack React-Redux-Typescript Boilerplate, no bottlenecks, no Babel transforms, every milisecond counts!
+# React / Redux / TypeScript - powered by Webpack
+Modern Webpack powered React-Redux-Typescript Starter-Kit, designed for Scalable & Maintainable Component-Driven SPA.
 
 WIP
