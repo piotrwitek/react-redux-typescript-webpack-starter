@@ -1,4 +1,4 @@
-# React / Redux / TypeScript - powered by Webpack
-Modern Webpack powered React-Redux-Typescript Starter-Kit, designed for Scalable & Maintainable Component-Driven SPA.
+# React-Redux-Typescript Project Starter - powered by Webpack2 optimized for performance
+Webpack2 powered React-Redux-Typescript Project Starter
 
 WIP
