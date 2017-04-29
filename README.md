@@ -12,20 +12,18 @@
 ---
 
 ## Installation
-
+- project optimized to use yarn
 ```
 // Clone repo
 git clone https://github.com/piotrwitek/react-redux-typescript-webpack-starter
 
 // Install dependencies
 npm install
-or
-yarn
 
 // Run development server with react hot-reload
-npm run dev
+npm run dev (ts-loader)
 or
-yarn dev
+npm run dev2 (awesome-typescript-loader)
 ```
 
 ---
