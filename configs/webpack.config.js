@@ -66,6 +66,8 @@ module.exports = (env = {}) => {
               {
                 loader: 'awesome-typescript-loader',
                 options: {
+                  transpileOnly: true,
+                  useTranspileModule: false,
                   sourceMap: isSourceMap,
                 },
               },
@@ -78,8 +80,8 @@ module.exports = (env = {}) => {
                 options: {
                   transpileOnly: true,
                   compilerOptions: {
-                    'target': isDev ? 'es2015' : 'es5',
                     'sourceMap': isSourceMap,
+                    'target': isDev ? 'es2015' : 'es5',
                     'isolatedModules': true,
                     'noEmitOnError': false,
                   },
