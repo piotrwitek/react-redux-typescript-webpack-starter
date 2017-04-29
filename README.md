@@ -2,9 +2,10 @@
 ## _Powered by Webpack2 optimized for performance_
 
 ## Features:
-- Webpack2 - both dev & production workflow scripts  
-- separate app (source code) and vendor bundle
-- both `ts-loader` & `awesome-typescript-loader` for performance comparison  
+- Ultra performance  
+- Webpack 2 - simple one-file config for both dev & production  
+- Separate app (source code) and vendor bundle  
+- Easy switch between `ts-loader` and `awesome-typescript-loader` for comparison (`dev` and `dev2` npm scripts)  
 - React Hot Loader 3  
 - Webpack Dashboard  
 
@@ -33,7 +34,9 @@ yarn dev
 
 #### - Development
 
-`npm run dev` or `yarn dev` - start local dev server with hot-reload
+`npm run dev` or `yarn dev` - start dev-server with hot-reload (ts-loader)
+
+`npm run dev2` or `yarn dev2` - start dev-server with hot-reload (awesome-typescript-loader)
 
 #### - Type checking
 
