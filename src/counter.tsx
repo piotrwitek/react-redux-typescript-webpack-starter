@@ -1,6 +1,12 @@
 import * as React from 'react';
 
-class Counter extends React.Component<any, any> {
+type Props = {
+};
+type State = {
+  count: number;
+};
+
+export class Counter extends React.Component<Props, State> {
   interval: any;
   state = { count: 0 };
 

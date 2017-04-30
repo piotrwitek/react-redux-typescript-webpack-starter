@@ -2,7 +2,7 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
 
-import { default as App } from './app';
+import { App } from './app';
 
 const render = (Component: any) => {
   ReactDOM.render(
@@ -15,13 +15,13 @@ const render = (Component: any) => {
 
 render(App);
 
-// Hot Module Replacement API
+// development hot-reload configs
 if (module.hot) {
   // app
-  module.hot.accept('./app', () => {
-    const NextApp = require('./app').default;
+  module.hot.accept('./app', async () => {
+    // const NextApp = require('./app').App;
+    const NextApp = (await System.import('./app')).App;
     render(NextApp);
-    // render(App); // es2015
   });
 
   // store

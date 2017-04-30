@@ -44,6 +44,7 @@ module.exports = (env = {}) => {
       path: PATHS.dist,
       filename: isDev ? '[name].js' : '[name].[hash].js',
       publicPath: '/',
+      // chunkFilename: '[id].chunk.js',
     },
 
     resolve: {
@@ -135,6 +136,10 @@ module.exports = (env = {}) => {
         new webpack.NamedModulesPlugin(),
       ] : []),
       ...(isBuild ? [
+        new webpack.LoaderOptionsPlugin({
+          minimize: true,
+          debug: false
+        }),
         new webpack.optimize.UglifyJsPlugin({
           beautify: false,
           compress: {
@@ -145,7 +150,6 @@ module.exports = (env = {}) => {
         }),
         new HtmlWebpackPlugin({
           template: './index.html',
-          cache: true,
         }),
       ] : []),
     ]
