@@ -9,6 +9,10 @@
 - React Hot Loader 3  
 - Webpack Dashboard  
 
+![](https://raw.githubusercontent.com/piotrwitek/react-redux-typescript-webpack-starter/docs/images/dev.gif)
+
+![](https://raw.githubusercontent.com/piotrwitek/react-redux-typescript-webpack-starter/docs/images/build.gif)
+
 ---
 
 ## Installation
@@ -32,9 +36,9 @@ npm run dev2 (awesome-typescript-loader)
 
 #### - Development
 
-`npm run dev` or `yarn dev` - start dev-server with hot-reload (ts-loader)
+`npm run dev` - start dev-server with hot-reload (ts-loader)
 
-`npm run dev2` or `yarn dev2` - start dev-server with hot-reload (awesome-typescript-loader)
+`npm run dev2` - start dev-server with hot-reload (awesome-typescript-loader)
 
 #### - Type checking
 
@@ -66,7 +70,7 @@ npm run dev2 (awesome-typescript-loader)
 
 #### - Deployment
 
-`npm run deploy` - commit and push all changes found in `/dist` folder to "gh-pages" branch
+~~`npm run deploy` - commit and push all changes found in `/dist` folder to "gh-pages" branch~~
 
 ---
 
