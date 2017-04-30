@@ -3,7 +3,7 @@ import * as React from 'react';
 type Props = {
 };
 type State = {
-  count: number;
+  count: number,
 };
 
 export class Counter extends React.Component<Props, State> {
