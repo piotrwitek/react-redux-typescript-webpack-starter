@@ -31,12 +31,16 @@ if (process.env.NODE_ENV === 'production') {
       ));
     });
 
-    // store
-    // module.hot.accept('./redux/reducers', () => {
-    //   const reducers = require('./redux/reducers').default;
-    //   return store.replaceReducer(reducers);
+    // // reducers
+    // module.hot.accept('../modules/root-reducer', () => {
+    //   const newRootReducer = require('./root-reducer').default;
+    //   store.replaceReducer(newRootReducer);
     // });
 
-    // epics
+    // // epics
+    // module.hot.accept('../modules/root-epic', () => {
+    //   const newRootEpic = require('./root-epic').default;
+    //   epicMiddleware.replaceEpic(newRootEpic);
+    // });
   }
 }

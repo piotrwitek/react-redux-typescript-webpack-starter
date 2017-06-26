@@ -57,7 +57,7 @@ module.exports = (env = {}) => {
 
     module: {
       rules: [
-        // awesome-typescript-loader
+        // typescript
         {
           test: /\.tsx?$/,
           include: PATHS.src,
@@ -72,9 +72,7 @@ module.exports = (env = {}) => {
                   sourceMap: isSourceMap,
                 },
               },
-            ]
-            :
-            [
+            ] : [
               { loader: 'react-hot-loader/webpack' },
               {
                 loader: 'ts-loader',
@@ -97,21 +95,49 @@ module.exports = (env = {}) => {
           include: [PATHS.src],
           use: { loader: 'json-loader' },
         },
-        // file
+        // // css
         // {
-        //   test: /\.(jpg|png|gif)$/,
-        //   use: 'file-loader'
+        //   test: /\.css$/,
+        //   include: [PATHS.STYLES],
+        //   loader: ExtractTextPlugin.extract([
+        //     'css-loader?{modules: false}',
+        //     'postcss-loader',
+        //   ]),
         // },
-        // url
+        // // less
         // {
-        //   test: /\.(woff|woff2|eot|ttf|svg)$/,
+        //   test: /\.less$/,
+        //   include: [PATHS.STYLES],
+        //   loader: ExtractTextPlugin.extract([
+        //     'css-loader?{modules: false}',
+        //     'less-loader',
+        //   ]),
+        // },
+        // // images
+        // {
+        //   test: /\.(jpg|jpeg|png|gif|svg)$/,
+        //   include: [PATHS.IMAGES],
         //   use: {
         //     loader: 'url-loader',
         //     options: {
-        //       limit: 100000
-        //     }
-        //   }
-        // }
+        //       name: 'images/[hash].[ext]',
+        //       limit: 1000, // inline file data until size
+        //     },
+        //   },
+        // },
+        // // fonts
+        // {
+        //   test: /\.(woff|woff2|ttf|eot)$/,
+        //   include: [
+        //     PATHS.ASSETS,
+        //   ],
+        //   use: {
+        //     loader: 'file-loader',
+        //     options: {
+        //       name: 'fonts/[name].[hash].[ext]',
+        //     },
+        //   },
+        // },
       ],
     },
 

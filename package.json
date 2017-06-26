@@ -12,7 +12,7 @@
     "clean": "rimraf dist",
     "build": "yarn run clean && webpack-dashboard -- webpack --config configs/webpack.config.js --env.build --env.sourceMap",
     "dev": "webpack-dashboard -m -- webpack-dev-server --config configs/webpack.config.js --open",
-    "dev2": "webpack-dashboard -- webpack-dev-server --config configs/webpack.config.js --open --env.awesome",
+    "dev2": "webpack-dashboard -m -- webpack-dev-server --config configs/webpack.config.js --open --env.awesome",
     "lint": "tslint --project tsconfig.json",
     "tsc": "tsc -p . --noEmit",
     "tsc:watch": "tsc -p . --noEmit -w",
