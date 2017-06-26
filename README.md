@@ -56,7 +56,7 @@ npm run dev2 (awesome-typescript-loader)
 
 #### - Utility & Git Hooks
 
-`npm run re` - reinstall all dependencies (usefull when switching branch)
+`npm run reinstall` - reinstall all dependencies (useful when switching branch) (note: use `reinstall:win` on Windows)
 
 `npm run lint` - run linter (tslint)
 
