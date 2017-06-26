@@ -18,8 +18,8 @@
     "tsc:watch": "tsc -p . --noEmit -w",
     "test": "jest --config jest.json",
     "test:update": "jest --config jest.json -u",
-    "re": "rm -rf node_modules && yarn",
-    "rewin": "rd /s /q node_modules && yarn",
+    "reinstall": "rm -rf node_modules && yarn",
+    "reinstall:win": "rd /s /q node_modules && yarn",
     "precommit": "yarn run lint",
     "prepush": "yarn run lint & yarn run tsc & yarn run test",
     "deploy": "echo 'deploy not set!'"
