@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Counter from './counter';
+import { Counter } from '@src/components';
 
 type Props = {
 };

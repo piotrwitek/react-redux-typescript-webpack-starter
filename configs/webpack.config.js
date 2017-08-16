@@ -48,6 +48,7 @@ module.exports = (env = {}) => {
     },
 
     resolve: {
+      alias: { '@src': PATHS.src },
       extensions: ['.ts', '.tsx', '.js', '.jsx', '.json'],
       modules: ['src', 'node_modules'],
     },

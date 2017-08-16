@@ -1,6 +1,9 @@
 {
   "compilerOptions": {
-    "baseUrl": "src/", // enables relative imports to root
+    "baseUrl": "./", // enables relative imports to root
+    "paths": {
+      "@src/*": ["src/*"]
+    },
     "outDir": "out/", // target for compiled files
     "allowSyntheticDefaultImports": true, // no errors on commonjs default import
     "allowJs": true, // include js files
