@@ -156,6 +156,10 @@ module.exports = (env = {}) => {
       new webpack.optimize.CommonsChunkPlugin({
         name: 'manifest',
       }),
+      new HtmlWebpackPlugin({
+        template: './index.html',
+        isBuild: isBuild
+      }),
       ...(isDev ? [
         new webpack.HotModuleReplacementPlugin({
           // multiStep: true, // better performance with many files
@@ -174,9 +178,6 @@ module.exports = (env = {}) => {
           },
           comments: false,
           sourceMap: isSourceMap,
-        }),
-        new HtmlWebpackPlugin({
-          template: './index.html',
         }),
       ] : []),
     ]
