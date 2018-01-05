@@ -157,8 +157,7 @@ module.exports = (env = {}) => {
         name: 'manifest',
       }),
       new HtmlWebpackPlugin({
-        template: './index.html',
-        isBuild: isBuild
+        template: './index.html'
       }),
       ...(isDev ? [
         new webpack.HotModuleReplacementPlugin({

@@ -7,11 +7,5 @@
     </head>
     <body>
         <div id="root"></div>
-        <% if (!htmlWebpackPlugin.options.isBuild) { %>
-            <!-- webpack bundles -->
-            <script src="/manifest.js"></script>
-            <script src="/vendor.js"></script>
-            <script src="/app.js"></script>
-        <% } %>
     </body>
 </html>
