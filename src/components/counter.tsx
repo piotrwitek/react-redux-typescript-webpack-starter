@@ -1,13 +1,13 @@
 import * as React from 'react';
 
-type Props = {
-};
-type State = {
-  count: number,
-};
+interface Props {
+}
+interface State {
+  count: number;
+}
 
 export class Counter extends React.Component<Props, State> {
-  interval: any;
+  interval: number;
   state = { count: 0 };
 
   componentWillMount() {

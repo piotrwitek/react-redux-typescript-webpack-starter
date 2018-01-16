@@ -48,13 +48,13 @@ module.exports = (env = {}) => {
     },
 
     resolve: {
-      alias: { '@src': PATHS.src },
+      alias: {
+        Components: '../src/components',
+        Features: '../src/features',
+      },
       extensions: ['.ts', '.tsx', '.js', '.jsx', '.json'],
       modules: ['src', 'node_modules'],
     },
-
-    // externals: {
-    // },
 
     module: {
       rules: [
