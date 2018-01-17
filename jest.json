@@ -1,14 +1,19 @@
 {
   "verbose": true,
-  "globals": {},
-  "moduleFileExtensions": [
-    "ts",
-    "tsx",
-    "js"
-  ],
   "transform": {
-    "\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    ".(ts|tsx)": "./node_modules/ts-jest/preprocessor.js"
   },
-  "testRegex": "/__tests__/.*\\.(ts|tsx|js)$",
-  "unmockedModulePathPatterns": []
+  "testRegex": "(/spec/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+  "moduleFileExtensions": ["ts", "tsx", "js"],
+  "globals": {
+    "window": {},
+    "ts-jest": {
+      "tsConfigFile": "./tsconfig.json"
+    }
+  },
+  "setupFiles": [
+    "./jest.stubs.js",
+    "./src/rxjs-imports.ts"
+  ],
+  "setupTestFrameworkScriptFile": "./setupTests.js"
 }

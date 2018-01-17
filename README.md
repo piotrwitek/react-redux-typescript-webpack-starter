@@ -1,13 +1,17 @@
-# React / Redux / Typescript / Webpack2 - App Starter
-## _Powered by Webpack2 optimized for performance_
+# React / Redux / Typescript / Webpack - Starter
+## _Powered by Webpack optimized for performance_
+
+### Recently updated all dependencies!
 
 ## Features:
+- No babel!  
 - Ultra performance  
-- Webpack 2 - simple one-file config for both dev & production  
-- Separate app (source code) and vendor bundle  
-- Easy switch between `ts-loader` and `awesome-typescript-loader` for comparison (`dev` and `dev2` npm scripts)  
-- React Hot Loader 3  
-- Webpack Dashboard  
+- Webpack 2 (simple one-file config, separate vendor bundle, dashboard)  
+- Setup for `ts-loader` and `awesome-typescript-loader` for comparison (check `npm run dev` or `npm run dev:awesome`)  
+- React Hot Loader  
+- Cool dependency graph!!! 🌟 __NEW__  
+
+![](https://raw.githubusercontent.com/piotrwitek/react-redux-typescript-webpack-starter/master/graph.svg)
 
 ![](https://raw.githubusercontent.com/piotrwitek/react-redux-typescript-webpack-starter/docs/images/dev.gif)
 
@@ -26,8 +30,6 @@ npm install
 
 // Run development server with react hot-reload
 npm run dev (ts-loader)
-or
-npm run dev2 (awesome-typescript-loader)
 ```
 
 ---
@@ -38,7 +40,9 @@ npm run dev2 (awesome-typescript-loader)
 
 `npm run dev` - start dev-server with hot-reload (ts-loader)
 
-`npm run dev2` - start dev-server with hot-reload (awesome-typescript-loader)
+`npm run dev:dashboard` - start dev-server with `webpack-dashboard`
+
+`npm run dev:awesome` - start dev-server with `awesome-typescript-loader`
 
 #### - Type checking
 
@@ -47,8 +51,6 @@ npm run dev2 (awesome-typescript-loader)
 `npm run tsc:watch` - fast incremental type-checking in watch mode
 
 #### - Production Bundling (`dist/` folder)
-
-~~`npm run prod` - start local dev server in `dist/` folder running production bundle~~
 
 `npm run clean` - clean dist
 
