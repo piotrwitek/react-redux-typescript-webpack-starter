@@ -8,14 +8,12 @@
 - Ultra performance  
 - Webpack 2 (simple one-file config, separate vendor bundle, dashboard)  
 - Setup for `ts-loader` and `awesome-typescript-loader` for comparison (check `npm run dev` or `npm run dev:awesome`)  
+
 - React Hot Loader  
-- Cool dependency graph!!! 🌟 __NEW__  
-
-![](./graph.svg)
-
 ![](https://raw.githubusercontent.com/piotrwitek/react-redux-typescript-webpack-starter/docs/images/dev.gif)
 
-![](https://raw.githubusercontent.com/piotrwitek/react-redux-typescript-webpack-starter/docs/images/build.gif)
+- Dependency graph of the entire application! 🌟 __NEW__  
+![](./graph.svg)
 
 ---
 
