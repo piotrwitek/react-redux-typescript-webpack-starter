@@ -4,6 +4,7 @@
     ".(ts|tsx)": "./node_modules/ts-jest/preprocessor.js"
   },
   "testRegex": "(/spec/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+  "testPathIgnorePatterns": ["/dist/", "/node_modules/"],
   "moduleFileExtensions": ["ts", "tsx", "js"],
   "globals": {
     "window": {},
